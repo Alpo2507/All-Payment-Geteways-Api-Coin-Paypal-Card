@@ -1,0 +1,19 @@
+POST http://localhost:8080/v2/quotes
+Content-Type: application/json
+Authorization: Basic 123:123
+
+{
+    "customer_uid": 0,
+    "items": {
+        "name": "item1",
+        "price": 100,
+        "tax_rate": 25,
+        "quantity": 1
+    },
+    "due_date": "2022-01-01",
+    "memo": "Want to buy this?",
+    "payment_method": "credit_card",
+    "notified": false,
+    "created_invoice": false,
+    "send_email": true
+}

@@ -1,0 +1,82 @@
+POST http://localhost:8080/v2/orders/place
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjo1LCJlbWFpbCI6ImpvaG5AZG9lLmNvbSJ9LCJleHAiOjE2MzgzNzcwODIsImlhdCI6MTYzODI5MDY4Mn0.ZkrdxAMKi1Jh5cDMdC8ZY40_id1PVNptaJidGP7iLTE
+
+{
+    "payment_method": "credit_card",
+    "products": [
+        {
+            "product_id": 3,
+            "quantity": 1,
+            "configurable_options": [
+                {
+                    "id": 1,
+                    "option_index": 1
+                },
+                {
+                    "id": 1,
+                    "option_index": 1
+                }
+            ]
+        },
+        {
+            "product_id": 4,
+            "quantity": 1,
+            "configurable_options": [
+                {
+                    "id": 1,
+                    "option_index": 0
+                }
+            ]
+        }
+    ]
+}
+
+###
+
+POST http://localhost:8080/v2/orders/place
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjo1LCJlbWFpbCI6ImpvaG5AZG9lLmNvbSJ9LCJleHAiOjE2MzgzNzcwODIsImlhdCI6MTYzODI5MDY4Mn0.ZkrdxAMKi1Jh5cDMdC8ZY40_id1PVNptaJidGP7iLTE
+
+{
+    "payment_method": "credit_card",
+    "products": [
+        {
+            "product_id": 3,
+            "quantity": 1
+        },
+        {
+            "product_id": 4,
+            "quantity": 1
+        }
+    ]
+}
+
+###
+POST http://localhost:8080/v2/orders/place
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjo1LCJlbWFpbCI6ImpvaG5AZG9lLmNvbSJ9LCJleHAiOjE2MzgzNzcwODIsImlhdCI6MTYzODI5MDY4Mn0.ZkrdxAMKi1Jh5cDMdC8ZY40_id1PVNptaJidGP7iLTE
+
+{
+    "payment_method": "credit_card",
+    "products": [
+        {
+            "product_id": 3,
+            "quantity": 1
+        },
+        {
+            "product_id": 4,
+            "quantity": 1,
+            "configurable_options": [
+                {
+                    "id": 1,
+                    "option_index": 0
+                },
+            ]
+        },
+        {
+            "product_id": 6,
+            "quantity": 1
+        }
+    ]
+}

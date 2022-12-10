@@ -1,0 +1,19 @@
+POST https://cpg.tolfx.dev/v2/customers/authenticate
+Content-Type: application/json
+
+{
+    "username": "test@tolfix.com",
+    "password": "123"
+}
+
+###
+GET http://localhost:8080/v2/customers/my/invoices
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjo1LCJlbWFpbCI6ImpvaG5AZG9lLmNvbSJ9LCJleHAiOjE2Mzg0MzEzODQsImlhdCI6MTYzODM0NDk4NH0.bWmhMafQCWYXenQojxMaTihnI1v6g2xl2_G9KhHbDMY
+
+###
+POST https://cpg.tolfx.dev/v2/customers/my/reset-password
+Content-Type: application/json
+
+{
+    "email": "matteus@tolfx.dev"
+}

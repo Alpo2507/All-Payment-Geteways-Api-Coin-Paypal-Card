@@ -1,0 +1,12 @@
+POST http://localhost:8080/v2/promotion_codes
+Content-Type: application/json
+Authorization: Basic 123:123 
+
+{
+    "name": "GAMING",
+    "discount": 100,
+    "valid_to": "2021-12-13",
+    "uses": 100,
+    "procentage": false,
+    "products_ids": [3, 4]
+}
